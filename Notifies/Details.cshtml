@@ -1,0 +1,42 @@
+﻿@model LoadsheddingSystem.Models.Notify
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Notify</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.NotificationReason)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NotificationReason)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CellNo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CellNo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Comments)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Comments)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.NotifyId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

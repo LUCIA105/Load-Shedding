@@ -1,0 +1,28 @@
+﻿@model LoadsheddingSystem.Models.ComplaintLetter
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>ComplaintLetter</h4>
+    <hr />
+
+    <img src="~/assets/img/defy.jpg" /><br /><br /><br /><br />
+
+
+    <img src="~/assets/img/defy.jpg" /><br /><br /><br /><br />
+
+    <h4>Customer Username: @Html.DisplayFor(model=>model.Username)</h4>
+    <h4>Date and time of issue: @Html.DisplayFor(model=>model.ComplaintDate)</h4>
+
+    <p><h4><u>Purpose of the letter: @Html.DisplayFor(model=>model.Comments)</u></h4></p>
+
+    Yours Faithfully
+    <br/><br/>
+    <br/><br/>
+    <div class="foooter">Signature .........</div>
+
+</div>
